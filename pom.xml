@@ -85,6 +85,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>finalprojecttcc</finalName>
 	</build>
 
 </project>
