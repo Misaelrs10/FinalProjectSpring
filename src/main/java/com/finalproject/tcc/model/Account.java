@@ -29,8 +29,8 @@ public class Account implements Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@Column(name = "nameOwner", length = 50)
-	@Size(min = 1, max = 50)
+	@Column(name = "nameOwner", length = 40)
+	@Size(min = 1, max = 40)
 	private String nameOwner;
 
 	@Column(name = "agencyCode", length = 4)
