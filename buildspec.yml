@@ -1,0 +1,13 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+      - echo Entrando no build phase...
+      - mvn clean package -DskipTests
+  post_build:
+    commands:
+      - echo Build completed successfully
+artifacts:
+  files:
+    - '**/*'
