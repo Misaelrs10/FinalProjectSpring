@@ -4,11 +4,10 @@ phases:
   build:
     commands:
       - echo Entrando no build phase...
-      - mvn clean package
+      - mvn clean package -DskipTests
   post_build:
     commands:
       - echo Build completed successfully
 artifacts:
   files:
-    - target/finalprojecttcc.jar
-  discard-paths: yes
+    - '**/*'
