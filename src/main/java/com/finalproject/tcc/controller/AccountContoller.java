@@ -3,6 +3,7 @@ package com.finalproject.tcc.controller;
 import java.net.URI;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,7 +21,8 @@ import com.finalproject.tcc.service.AccountService;
 @RestController
 @RequestMapping("api/accounts")
 public class AccountContoller {
-
+	
+	@Autowired
 	private AccountService accountService;
 
 	public AccountContoller(AccountService accountService) {
